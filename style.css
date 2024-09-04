@@ -1,0 +1,115 @@
+body {
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header {
+  display: block;
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  padding: 20px;
+}
+
+.scarecrow {
+  max-width: 80%;
+  height: auto;
+}
+
+.content-section {
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 0;
+  width: 100%;
+}
+.img-section {
+  width: 80%;
+}
+main h2 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  color: #333333;
+}
+
+main p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.button-back {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #4f4f4f;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .scarecrow {
+    max-width: 70%;
+  }
+
+  .content-container {
+    width: 80%;
+  }
+  .img-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%; /* Asegura que la sección ocupe todo el ancho del contenedor */
+    height: 100%; /* Opcional: Si quieres centrar verticalmente y la sección tiene una altura definida */
+  }
+
+  main h2 {
+    font-size: 50px;
+  }
+
+  main p {
+    font-size: 24px;
+    width: 75%;
+  }
+
+  .button-back {
+    font-size: 20px;
+  }
+
+  header {
+    top: 20px;
+    left: 40px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
